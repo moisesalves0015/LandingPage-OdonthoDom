@@ -138,3 +138,17 @@ aElement.forEach(function(item){
         e.preventDefault();
     });
 });
+
+document.getElementById('show-more-btn').addEventListener('click', function () {
+    const allCards = document.querySelectorAll('.service-card');
+    
+    // Mostrar todos os que estavam escondidos
+    allCards.forEach((card, index) => {
+      if (index >= 4) { // Só remove dos que vêm depois dos 4 primeiros
+        card.classList.remove('hidden');
+      }
+    });
+
+    // Esconde o botão depois de mostrar tudo
+    this.classList.add('hidden');
+  });
