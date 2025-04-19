@@ -152,3 +152,6 @@ document.getElementById('show-more-btn').addEventListener('click', function () {
     // Esconde o botão depois de mostrar tudo
     this.classList.add('hidden');
   });
+
+
+  
