@@ -21,9 +21,23 @@
     <!-- Scripts -->
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./scripts/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
+  
+<!-- Botão WhatsApp Fixo no Canto Inferior Direito -->
+<a href="https://wa.me/5521986682606"
+   
+   class="fixed bottom-0 right-0 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center gap-2 z-50">
+
+  <span class="text-xl">💬</span>
+  <span class="font-medium">Fale conosco</span>
+</a>
+
+
+      
     <!-- SVG Importing -->
     <svg class="hidden">
         <symbol id="bars" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -112,16 +126,16 @@
                     <ul
                         class="flex gap-x-10 xl:gap-x-12 text-slate-800 text-sm font-bold child:transition-colors child:delay-75 child-hover:text-primary ">
                         <li>
-                            <a href="#">Sobre Nós</a>
+                            <a  href="#" onclick="document.getElementById('sobrenos').scrollIntoView({ behavior: 'smooth', block: 'center' })" >Sobre Nós</a>
                         </li>
                         <li>
-                            <a href="#">Primeira Consulta</a>
+                            <a  href="#" onclick="document.getElementById('primeiraconsulta').scrollIntoView({ behavior: 'smooth', block: 'center' })"  >Primeira Consulta</a>
                         </li>
                         <li>
-                            <a href="#">Nossas Especialidades</a>
+                            <a  href="#" onclick="document.getElementById('nossasespecialidades').scrollIntoView({ behavior: 'smooth', block: 'center' })"  >Nossas Especialidades</a>
                         </li>
-                        <li>
-                            <a href="#contatos"> Fale Conosco</a>
+                        <li >
+                            <a  href="#"  onclick="document.getElementById('faleconosco').scrollIntoView({ behavior: 'smooth', block: 'center' })"  > Fale Conosco</a>
                         </li>
 
                     </ul>
@@ -243,7 +257,7 @@
         </section>
 
         <!-- Services Section -->
-        <section class="section mb-32">
+        <section class="section mb-32" id="nossasespecialidades">
             <div class="container">
                 <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
                     <!-- Services info contents -->
@@ -414,7 +428,7 @@
         </section>
 
         <!-- Emergency Section -->
-        <section class="section my-20">
+        <section class="section my-20" id="primeiraconsulta">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center gap-x-20 gap-y-12 justify-center ">
                     <!-- Emergency image -->
@@ -425,7 +439,7 @@
                             src="./assets/images/imagem-atendentes.JPEG" alt="emergency-mobile">
                     </div>
                     <!-- Emergency Contents -->
-                    <div class="flex flex-col gap-y-4 text-center lg:text-start">
+                    <div    class="flex flex-col gap-y-4 text-center lg:text-start">
                         <!-- Title -->
                         <h4 class="text-sm text-primary font-bold">PRIMEIRA CONSULTA</h4>
                         <!-- Subtitle -->
@@ -446,7 +460,7 @@
         </section>
 
         <!-- Features Section -->
-        <section class="section py-16">
+        <section class="section py-16" id="sobrenos">
             <div class="container">
                 <!-- p-8 md:px-20 md:py-16 lg:px-60 lg:py-20 -->
                 <!-- Feature Container -->
@@ -927,7 +941,7 @@
         </section>
 
         <!-- Contact us Section -->
-        <section id="contatos" class="section py-16">
+        <section id="faleconosco" class="section py-16" >
             <div class="container">
                 <div class="flex flex-col lg:flex-row gap-y-6 gap-x-20">
                     <!-- Map image -->
@@ -1121,6 +1135,11 @@
             </div>
         </div>
     </footer>
+   
+
+    <!-- Botão WhatsApp Flutuante -->
+
+    
 </body>
 
 </html>
