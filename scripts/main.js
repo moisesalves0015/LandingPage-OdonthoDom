@@ -43,7 +43,7 @@ const swiperTestimonial = new Swiper('.swiper-1', {
     direction: 'horizontal',
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
         pauseOnMouseEnter: true,
     },
     slidesPerView: 1,
@@ -66,7 +66,7 @@ const swiperBlogPost = new Swiper('.swiper-2', {
     direction: 'horizontal',
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
         pauseOnMouseEnter: true,
     },
     slidesPerView: 1,
